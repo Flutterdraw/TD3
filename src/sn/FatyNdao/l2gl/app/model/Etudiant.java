@@ -51,6 +51,6 @@ public final class Etudiant extends Personne implements Affichable, Identifiable
 
     @Override
     public String identifiant() {
-        return getMatricule();
+        return "Matricule";
     }
 }

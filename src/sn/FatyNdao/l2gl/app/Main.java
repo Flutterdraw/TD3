@@ -18,8 +18,8 @@ public class Main {
         }
 
         Etudiant et1 = new Etudiant("Mounasse", "Moun@e", "ET01");
-        Etudiant et2 = new Etudiant("Mounasse", "Moun@e", "ET01");
-        Etudiant et3 = et1;
+        Etudiant et2 = new Etudiant("Bella", "Bell@", "ET02");
+        Etudiant et3 = new Etudiant("Flutterdraw", "Flutterdr@w", "ET03");
         Module m = new Module("C01", "Algortithme");
         Module m2 = new Module("C02", "JAVA");
         Note n = new Note(et1, m, 14.5);
@@ -38,7 +38,11 @@ public class Main {
         Registre<Etudiant> TabEtu = new Registre<>(Tet, 100);
         Registre<Module> TabMod = new Registre<>(tm, 100);
 
-        Etudiant et4 = new Etudiant("Moye", "Moy@e", "ET02");
+        IO.println(TableauxUtils.indexOf(Tet, et2));
+        IO.println(TableauxUtils.indexOf(tm, m));
+        IO.println(TableauxUtils.indexOf(liste, "Attraction"));
+
+        Etudiant et4 = new Etudiant("Moye", "Moy@e", "ET04");
 //        Etudiant et5 = new Etudiant("Pruja", "Pruj@a", "ET02");
         TabEtu.ajouter(et4);
         IO.println(TabMod.chercherParID("C02").Afficher());
